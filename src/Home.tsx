@@ -216,6 +216,12 @@ const Image = styled.img`
   box-shadow: 5px 5px 40px 5px rgba(0,0,0,0.5);
 `;
 
+const Video = styled.video`
+    border: 0;
+    width: 400px;
+    height: 400px;
+`;
+
 const BorderLinearProgress = styled(LinearProgress)`
   margin: 20px;
   height: 10px !important;
@@ -567,9 +573,13 @@ const Home = (props: HomeProps) => {
                     <DesContainer>
                         <NFT elevation={3}>
                             <br/>
-                            <div><Image
-                                src="outside_plus_coin.gif"
-                                alt="NFT To Mint"/></div>
+                            <div><Video
+                                src="2022-POAP-Outside-NON-Mem.mp4"
+                                loop
+                                playsInline
+                                autoPlay
+                                muted
+                                /></div>
                             <br/>
                             {wallet && isActive && whitelistEnabled && (whitelistTokenBalance > 0) && isBurnToken &&
                               <h3>You own {whitelistTokenBalance} WL mint {whitelistTokenBalance > 1 ? "tokens" : "token" }.</h3>}
