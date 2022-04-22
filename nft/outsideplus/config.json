@@ -1,0 +1,25 @@
+{
+    "price": 0.005,
+    "gatekeeper": {
+        "gatekeeperNetwork" : "ignREusXmGrscGNUesoU9mxfds9AiYTezUKex2PsZV6",
+        "expireOnUse" : true
+      },
+    "number": 100,
+    "solTreasuryAccount": "64FjYL9wTS9qtnvA19N2pWn9Awkj9ww56qE5Zkg2EgXu",
+    "splTokenAccount": null,
+    "splToken": null,
+    "goLiveDate": "25 Dec 2021 00:00:00 GMT",
+    "endSettings": null,
+    "whitelistMintSettings": null,
+    "hiddenSettings" : {
+        "name":"Outside+ Proof of Attendance Collection",
+          "uri":"https://arweave.net/YyfgsmQVEmauCPI8dRN6pyBIKHkjCPOQa5HwZwKJnWk/",
+          "hash":"randomstring1283123123"
+        },  
+    "storage": "arweave",
+    "ipfsInfuraProjectId": null,
+    "ipfsInfuraSecret": null,
+    "awsS3Bucket": null,
+    "noRetainAuthority": false,
+    "noMutable": false
+}

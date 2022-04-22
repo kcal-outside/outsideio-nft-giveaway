@@ -1,0 +1,13 @@
+{
+    "name": "Outside+ Proof of Attendance Badge",
+    "symbol": "O+",
+    "description": "Show the world that you're an Outside+ Member. Endless inspiration and resources to fuel your pursuit of epic (and everyday) adventures. Visit http://outside.io/outsideplus to learn more.",
+    "seller_fee_basis_points": 500,
+    "image": "outside_plus_coin.gif",
+    "attributes": [],
+    "properties": {
+        "creators": [{"address": "64FjYL9wTS9qtnvA19N2pWn9Awkj9ww56qE5Zkg2EgXu", "share": 100}],
+        "files": [{"uri": "outside_plus_coin.gif", "type": "image/gif"}]
+    },
+    "collection": {"name": "Outside+ Proof of Attendance Collection", "family": "Outside Outerverse"}
+}

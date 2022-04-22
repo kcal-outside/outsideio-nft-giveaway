@@ -1,4 +1,65 @@
-# Introduction
+# Outerverse NFT Giveaway Platform
+
+POC to spin up an Outerverse NFT Giveaway.
+
+## Getting Started
+
+First, run the development server:
+
+```bash
+yarn install
+yarn dev
+```
+
+
+## Minting
+
+We require candy machine to mint so follow along here:
+https://www.quicknode.com/guides/web3-sdks/how-to-deploy-an-nft-on-solana-using-candy-machine-v2
+
+### Verifying
+Once you completed your project's artwork and metadata preparation, it is important to verify that the files are ready to be uploaded. The Candy Machine CLI provides the verify_assets command to check that the files in the assets folder are in the correct format. This involves verifying that:
+
+```bash
+ts-node ~/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts verify_assets ./nft/outsideplus/assets
+```
+
+### Uploading
+Once you have your collection prepared, the next step is to upload your assets and create a Candy Machine. 
+This step is completed by a single command via the Candy Machine CLI.
+
+```bash
+ts-node ~/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts upload \
+    -e devnet \
+    -k ~/.config/solana/devnet-wallet.json \
+    -cp ./nft/outsideplus/config.json \
+    -c example \
+    --rpc-url https://still-young-field.solana-devnet.quiknode.pro/81df49796d09f840779524549a89c1d8c9eefb42/ \
+    ./nft/outsideplus/assets
+```
+
+### Verify the Upload
+Once it has completed, you need to verify that everything uploaded correctly.
+
+```bash
+ts-node ~/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts verify_upload \
+ -e devnet \
+ -k ~/.config/solana/devnet-wallet.json \
+ -c example
+```
+
+If verified, you should see:
+```bash
+...
+uploaded (10) out of (10)
+ready to deploy!
+$
+```
+
+
+# Original Read Me
+
+## Introduction
 
 ### SOON : Setup Multi-Mint using this repository, explained in video by 'Stractors' https://www.youtube.com/channel/UCf-oH3TIq8xHVtVogrpTm7g
 
