@@ -1,10 +1,10 @@
 {
-    "price": 0.005,
+    "price": 0.0,
     "gatekeeper": {
         "gatekeeperNetwork" : "ignREusXmGrscGNUesoU9mxfds9AiYTezUKex2PsZV6",
         "expireOnUse" : true
       },
-    "number": 100,
+    "number": 1000,
     "solTreasuryAccount": "64FjYL9wTS9qtnvA19N2pWn9Awkj9ww56qE5Zkg2EgXu",
     "splTokenAccount": null,
     "splToken": null,
@@ -12,9 +12,9 @@
     "endSettings": null,
     "whitelistMintSettings": null,
     "hiddenSettings" : {
-        "name":"Outside+ Proof of Attendance Collection",
-          "uri":"https://arweave.net/YyfgsmQVEmauCPI8dRN6pyBIKHkjCPOQa5HwZwKJnWk/",
-          "hash":"randomstring1283123123"
+        "name": "Outside+ Proof of Attendance Collection",
+          "uri": "https://arweave.net/v_KxnGl_uWqKg060UK1zUA2m_4UrH5fzPTR5xcT4nhc",
+          "hash":"v_KxnGl_uWqKg060UK1zUA2m_4UrH5fzPTR5xcT4nhc"
         },  
     "storage": "arweave",
     "ipfsInfuraProjectId": null,

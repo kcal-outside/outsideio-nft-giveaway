@@ -17,6 +17,19 @@ yarn dev
 We require candy machine to mint so follow along here:
 https://www.quicknode.com/guides/web3-sdks/how-to-deploy-an-nft-on-solana-using-candy-machine-v2
 
+This is to create a single POAP-like NFT release to be given away instead of generative 1, 2, 3. etc.
+
+The code below is the example code for the `./nft/outsideplus` NFT project.
+
+We are also using quiknode.pro for Solana RPC setup.
+
+### Requirements
+
+You need to have the following installed:
+* Solana Filesystem Wallets -- Testnet and Mainnet.
+* https://github.com/metaplex-foundation/metaplex.  Note that the code below uses a `ln -s` link to `~/metaplex`
+* https://github.com/CalebEverett/arloader
+
 ### Verifying
 Once you completed your project's artwork and metadata preparation, it is important to verify that the files are ready to be uploaded. The Candy Machine CLI provides the verify_assets command to check that the files in the assets folder are in the correct format. This involves verifying that:
 
@@ -27,6 +40,28 @@ ts-node ~/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts verify_assets ./n
 ### Uploading
 Once you have your collection prepared, the next step is to upload your assets and create a Candy Machine. 
 This step is completed by a single command via the Candy Machine CLI.
+
+We are going to do it in two parts. 
+1. Manually upload files to arweave for the hiddenSettings
+2. Use Candy Machine to create the NFT Mint
+
+#### Arweave
+
+You need to use 
+
+```bash
+arloader upload ./nft/outsideplus/assets/0.json \
+  --with-sol \
+  --sol-keypair-path ~/.config/solana/mainnet-wallet.json \
+  --ar-default-keypair --no-bundle
+```
+
+Get the arweave path and test it.  For example:
+`https://arweave.net/v_KxnGl_uWqKg060UK1zUA2m_4UrH5fzPTR5xcT4nhc`
+
+Us this URL as the config.json's `hiddenSetting.uri`
+
+#### Candy Machine
 
 ```bash
 ts-node ~/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts upload \
