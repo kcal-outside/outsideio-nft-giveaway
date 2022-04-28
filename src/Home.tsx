@@ -567,7 +567,7 @@ const Home = (props: HomeProps) => {
                             <ConnectButton>Connect Wallet</ConnectButton>}
                     </Wallet>
                 </WalletContainer>
-                <ShimmerTitle>Get Your Outerverse NFT</ShimmerTitle>
+                <ShimmerTitle>Claim Your NFT</ShimmerTitle>
                 <br/>
                 <MintContainer>
                     <DesContainer>
