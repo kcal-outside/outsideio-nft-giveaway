@@ -107,6 +107,12 @@ When launching the candymachine, make sure to use production (mainnet-test) or d
 
 To initialize a whole new Candy Machine, you need to delete `.cache` folder.
 
+General steps to do an unlimited drop:
+1. Set config.json to number=0 using a hiddenSetting
+2. Upload the 0.json to arweave
+3. Upload the assets using Candy Machine
+4. Update the Candy Machine config.json to number=99999 and point to the arweave.json for the hiddenSettings
+
 ##### TEST / devnet
 ```bash
 ts-node ~/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts upload \
@@ -139,7 +145,7 @@ Candy machine address: 9wBH6xD3DkiVy6HCuBqk5FbtVTfB2VXD2ujvkQLrrmv8
 Get this address and use in the `.env` file.
 
 
-### Update the Iten Count to be greater than 1
+### Update the Iten Count to be greater than 0
 
 Edit `config.json` and change the `number` to something high like 999999.
 
