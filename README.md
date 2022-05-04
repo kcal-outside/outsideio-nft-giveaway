@@ -41,7 +41,7 @@ This is real money.
 
 ```bash
 solana config set \
-   --url mainnet-beta \
+   --url https://api.mainnet-beta.solana.com \
    --keypair ~/.config/solana/mainnet-wallet.json
 ```
 
@@ -125,13 +125,16 @@ ts-node ~/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts upload \
 ```
 
 ##### PRODUCTION / mainnet-test
+
+Note: If you are using mainnet-test, make sure your *.json files are using mainnet addresses. 
+ie., `config.json: solTreasuryAccount` or `0.json: creators.address`
+
 ```bash
 ts-node ~/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts upload \
-    -e mainnet-test \
+    -e mainnet-beta \
     -k ~/.config/solana/mainnet-wallet.json \
     -cp ./nft/outside_bedrock/config.json \
     -c outside_bedrock \
-    --rpc-url https://still-young-field.solana-devnet.quiknode.pro/81df49796d09f840779524549a89c1d8c9eefb42/ \
     ./nft/outside_bedrock/assets
 ```
 
@@ -149,6 +152,7 @@ Get this address and use in the `.env` file.
 
 Edit `config.json` and change the `number` to something high like 999999.
 
+#### Test
 ```bash
 ts-node ~/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts update_candy_machine \
     -e devnet \
@@ -158,10 +162,20 @@ ts-node ~/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts update_candy_mach
     --rpc-url https://still-young-field.solana-devnet.quiknode.pro/81df49796d09f840779524549a89c1d8c9eefb42/ 
 ```
   
+#### Production
+```bash
+ts-node ~/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts update_candy_machine \
+    -e mainnet-beta \
+    -k ~/.config/solana/mainnet-wallet.json \
+    -cp ./nft/outside_bedrock/config.json \
+    -c  outside_bedrock
+```
+  
 
 ### Verify the Upload
 Once it has completed, you need to verify that everything uploaded correctly.
 
+#### Test
 ```bash
 ts-node ~/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts verify_upload \
     -e devnet \
@@ -169,9 +183,18 @@ ts-node ~/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts verify_upload \
     -k ~/.config/solana/devnet-wallet.json
 ```
 
+#### Production
+```bash
+ts-node ~/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts verify_upload \
+    -e mainnet-beta \
+    -c outside_bedrock \
+    -k ~/.config/solana/mainnet-wallet.json
+```
+
 ### See Status of Mint
 Once it has completed, you need to verify that everything uploaded correctly.
 
+#### Test
 ```bash
 ts-node ~/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts show \
     -e devnet \
@@ -180,8 +203,10 @@ ts-node ~/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts show \
     --rpc-url https://still-young-field.solana-devnet.quiknode.pro/81df49796d09f840779524549a89c1d8c9eefb42/ 
 ```
 
-ts-node ~/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts withdraw_all \
-    -e devnet \
-    -k ~/.config/solana/devnet-wallet.json \
-    -c outside_bedrock \
-    --rpc-url https://still-young-field.solana-devnet.quiknode.pro/81df49796d09f840779524549a89c1d8c9eefb42/ 
+#### Production
+```bash
+ts-node ~/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts show \
+    -e mainnet-beta \
+    -k ~/.config/solana/mainnet-wallet.json \
+    -c outside_bedrock 
+```
