@@ -1,3 +1,9 @@
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Link
+} from "react-router-dom";
 import { createTheme, ThemeProvider } from "@material-ui/core";
 import { useMemo } from "react";
 import {
@@ -24,7 +30,9 @@ import {
 } from '@solana/wallet-adapter-react-ui';
 
 import "./App.css";
-import Home from "./Home";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Redeem from "./pages/Redeem";
 
 require('@solana/wallet-adapter-react-ui/styles.css');
 
@@ -66,6 +74,7 @@ const theme = createTheme({
 });
 
 const App = () => {
+
     // Custom RPC endpoint.
   const endpoint = useMemo(() => clusterApiUrl(network), []);
 
@@ -92,12 +101,39 @@ const App = () => {
         <ConnectionProvider endpoint={endpoint}>
           <WalletProvider wallets={wallets} autoConnect={true}>
             <WalletModalProvider>
-              <Home
-                candyMachineId={candyMachineId}
-                connection={connection}
-                txTimeout={txTimeout}
-                rpcHost={rpcHost}
-              />
+
+            <Router>
+                <div>
+                  <nav>
+                    <ul>
+                      <li>
+                        <Link to="/">Home</Link>
+                      </li>
+                      <li>
+                        <Link to="/about">About</Link>
+                      </li>
+                      <li>
+                        <Link to="/users">Users</Link>
+                      </li>
+                    </ul>
+                  </nav>
+
+                  {/* A <Switch> looks through its children <Route>s and
+                      renders the first one that matches the current URL. */}
+                  <Routes>
+                    <Route path="/" element={
+                      <Home
+                          candyMachineId={candyMachineId}
+                          connection={connection}
+                          txTimeout={txTimeout}
+                          rpcHost={rpcHost}
+                        />
+                    } />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/redeem" element={<Redeem />} />
+                  </Routes>
+                </div>
+              </Router>
             </WalletModalProvider>
           </WalletProvider>
         </ConnectionProvider>

@@ -41,7 +41,7 @@ This is real money.
 
 ```bash
 solana config set \
-   --url https://api.mainnet-beta.solana.com \
+   --url https://long-old-rain.solana-mainnet.quiknode.pro/c98f1c4c592f8fa10569d624c807bf2dbc0ec790/ \
    --keypair ~/.config/solana/mainnet-wallet.json
 ```
 
@@ -150,7 +150,7 @@ Get this address and use in the `.env` file.
 
 ### Update the Iten Count to be greater than 0
 
-Edit `config.json` and change the `number` to something high like 999999.
+Edit `config.json` and change the `number` to something high like 999999 then run the `update_candy_machine`
 
 #### Test
 ```bash

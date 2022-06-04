@@ -9,15 +9,15 @@ import {GatewayProvider} from '@civic/solana-gateway-react';
 import Countdown from "react-countdown";
 import {Snackbar, Paper, LinearProgress, Chip} from "@material-ui/core";
 import Alert from "@material-ui/lab/Alert";
-import {toDate, AlertState, getAtaForMint} from './utils';
-import {MintButton} from './MintButton';
+import {toDate, AlertState, getAtaForMint} from '../utils';
+import {MintButton} from '../components/MintButton';
 import {
     CandyMachine,
     awaitTransactionSignatureConfirmation,
     getCandyMachineState,
     mintOneToken,
     CANDY_MACHINE_PROGRAM,
-} from "./candy-machine";
+} from "../candy-machine";
 
 const cluster = process.env.REACT_APP_SOLANA_NETWORK!.toString();
 const decimals = process.env.REACT_APP_SPL_TOKEN_TO_MINT_DECIMALS ? +process.env.REACT_APP_SPL_TOKEN_TO_MINT_DECIMALS!.toString() : 9;
@@ -119,46 +119,6 @@ const MintButtonContainer = styled.div`
   }
 `;
 
-const Logo = styled.div`
-  flex: 0 0 auto;
-
-  img {
-    height: 60px;
-  }
-`;
-const Menu = styled.ul`
-  list-style: none;
-  display: inline-flex;
-  flex: 1 0 auto;
-
-  li {
-    margin: 0 12px;
-
-    a {
-      color: var(--main-text-color);
-      list-style-image: none;
-      list-style-position: outside;
-      list-style-type: none;
-      outline: none;
-      text-decoration: none;
-      text-size-adjust: 100%;
-      touch-action: manipulation;
-      transition: color 0.3s;
-      padding-bottom: 15px;
-
-      img {
-        max-height: 26px;
-      }
-    }
-
-    a:hover, a:active {
-      color: rgb(131, 146, 161);
-      border-bottom: 4px solid var(--title-text-color);
-    }
-
-  }
-`;
-
 const SolExplorerLink = styled.a`
   color: var(--title-text-color);
   border-bottom: 1px solid var(--title-text-color);
@@ -214,12 +174,6 @@ const Image = styled.img`
   width: auto;
   border-radius: 7px;
   box-shadow: 5px 5px 40px 5px rgba(0,0,0,0.5);
-`;
-
-const Video = styled.video`
-    border: 0;
-    width: 400px;
-    height: 400px;
 `;
 
 const BorderLinearProgress = styled(LinearProgress)`
@@ -533,7 +487,6 @@ const Home = (props: HomeProps) => {
         }
     };
 
-
     useEffect(() => {
         (async () => {
             if (wallet) {
@@ -555,30 +508,21 @@ const Home = (props: HomeProps) => {
         <main>
             <MainContainer>
                 <WalletContainer>
-                    <Logo><a href="http://localhost:3000/" target="_blank" rel="noopener noreferrer">
-                        <img alt="" src="outside-io-logo.jpeg"/></a>
-                    </Logo>
-                    <Menu>
-                        
-                    </Menu>
                     <Wallet>
                         {wallet ?
                             <WalletAmount>{(balance || 0).toLocaleString()} SOL<ConnectButton/></WalletAmount> :
                             <ConnectButton>Connect Wallet</ConnectButton>}
                     </Wallet>
                 </WalletContainer>
-                <ShimmerTitle>Claim Your NFT</ShimmerTitle>
+                <ShimmerTitle>Buy your Passport</ShimmerTitle>
                 <br/>
                 <MintContainer>
                     <DesContainer>
                         <NFT elevation={3}>
                             <br/>
-                            <div><Video
-                                src="2022-POAP-Outside-NON-Mem.mp4"
-                                loop
-                                playsInline
-                                autoPlay
-                                muted
+                            <div><Image
+                                src="/passport_coming_soon.png"
+                                alt="Outerverse Passport"
                                 /></div>
                             <br/>
                             {wallet && isActive && whitelistEnabled && (whitelistTokenBalance > 0) && isBurnToken &&
