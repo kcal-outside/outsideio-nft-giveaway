@@ -93,3 +93,21 @@ ts-node ~/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts upload \
     --rpc-url https://still-young-field.solana-devnet.quiknode.pro/81df49796d09f840779524549a89c1d8c9eefb42/ \
     ./nft/passport/assets
 ```
+
+#### Shutting down Candy Machine
+
+Important! Don't forget to withdraw! This will withdraw funds and kill candy machine.
+
+```bash
+ts-node ~/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts withdraw 8HfVC6QvcHX7LspwEWviaXzt3M1GmDcBjuDUNvBn7x5j \
+    --env devnet \
+    --keypair ~/.config/solana/devnet-wallet.json
+```
+
+
+## Note on Pre-Minting
+When you use a gatekeeper, you will not be able to mint from the CLI command mint_one_token. 
+If you want to pre-mint from a CMv2 and are planning to use a gatekeeper, you should set the 
+goLiveDate to null and turn gatekeeper (temporarily) off. This will allow you to mint from 
+the command line, but only you as the CMv2 authority. Once you complete the pre-mint, turn 
+gatekeeper on and set the correct goLiveDate.)
