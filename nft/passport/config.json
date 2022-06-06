@@ -1,18 +1,31 @@
 {
     "price": 0.01,
+	  "symbol": "OUTPASS",
     "gatekeeper": null,
-    "number": 2,
-    "solTreasuryAccount": "8tBxoLVjvAoCzYdENnNxP36MCvzKmiPhCgGB6xu4aVhE",
+    "number": 100,
+    "solTreasuryAccount": "64FjYL9wTS9qtnvA19N2pWn9Awkj9ww56qE5Zkg2EgXu",
     "splTokenAccount": null,
     "splToken": null,
-    "goLiveDate": null,
+    "goLiveDate": "2022-04-01T00:00:00Z",
     "endSettings": null,
     "whitelistMintSettings": null,
-    "hiddenSettings" : {},  
-    "storage": "arweave",
+    "hiddenSettings": {
+        "name":"Testverse Passport ",
+        "uri":"https://h2lqx5nssy3mjlyhofssf7adp2mgcepqqhxfji2nzq2elxf4ex2q.arweave.net/PpcL9bKWNsSvB3FlIvwDfphhEfCB7lSjTcw0Rdy8JfU",
+        "hash":"ce546bad19c32161bfd56f94544a008e"
+    },
+    "storage": "arweave-sol",
     "ipfsInfuraProjectId": null,
     "ipfsInfuraSecret": null,
     "awsS3Bucket": null,
-    "noRetainAuthority": false,
-    "noMutable": false
+    "uploadMethod": "bundlr",
+    "retainAuthority": true,
+    "isMutable": true,
+    "sellerFeeBasisPoints": 1000,
+    "creators": [
+    {
+      "address": "64FjYL9wTS9qtnvA19N2pWn9Awkj9ww56qE5Zkg2EgXu",
+      "share": 100
+    }
+  ]
 }

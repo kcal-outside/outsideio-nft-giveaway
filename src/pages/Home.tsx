@@ -77,12 +77,6 @@ const NFT = styled(Paper)`
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22) !important;
 `;
 
-const Des = styled(NFT)`
-  text-align: left;
-  padding-top: 0px;
-`;
-
-
 const Card = styled(Paper)`
   display: inline-block;
   background-color: var(card-background-lighter-color) !important;
@@ -208,21 +202,6 @@ const ShimmerTitle = styled.h1`
     }
   }
 `;
-
-const GoldTitle = styled.h2`
-  color: var(--title-text-color);
-`;
-
-const LogoAligner = styled.div`
-  display: flex;
-  align-items: center;
-
-  img {
-    max-height: 35px;
-    margin-right: 10px;
-  }
-`;
-
 
 export interface HomeProps {
     candyMachineId: anchor.web3.PublicKey;
@@ -519,17 +498,16 @@ const Home = (props: HomeProps) => {
                 <MintContainer>
                     <DesContainer>
                         <NFT elevation={3}>
-                            <br/>
-                            <div><Image
-                                src="/passport_coming_soon.png"
-                                alt="Outerverse Passport"
-                                /></div>
+                            <div><Price
+                                label={isActive && whitelistEnabled && (whitelistTokenBalance > 0) ? (whitelistPrice + " " + priceLabel) : (price + " " + priceLabel)}/><Image
+                                src="passport_coming_soon.png"
+                                alt="NFT To Mint"/></div>
                             <br/>
                             {wallet && isActive && whitelistEnabled && (whitelistTokenBalance > 0) && isBurnToken &&
-                              <h3>You own {whitelistTokenBalance} WL mint {whitelistTokenBalance > 1 ? "tokens" : "token" }.</h3>}
+                              <h3>You own {whitelistTokenBalance} WL
+                                mint {whitelistTokenBalance > 1 ? "tokens" : "token"}.</h3>}
                             {wallet && isActive && whitelistEnabled && (whitelistTokenBalance > 0) && !isBurnToken &&
                               <h3>You are whitelisted and allowed to mint.</h3>}
-
                             {wallet && isActive && endDate && Date.now() < endDate.getTime() &&
                               <Countdown
                                 date={toDate(candyMachine?.state?.endSettings?.number)}
@@ -539,6 +517,10 @@ const Home = (props: HomeProps) => {
                                 }}
                                 renderer={renderEndDateCounter}
                               />}
+                            {wallet && isActive &&
+                              <h3>TOTAL MINTED : {itemsRedeemed} / {itemsAvailable}</h3>}
+                            {wallet && isActive && <BorderLinearProgress variant="determinate"
+                                                                         value={100 - (itemsRemaining * 100 / itemsAvailable)}/>}
                             <br/>
                             <MintButtonContainer>
                                 {!isActive && !isEnded && candyMachine?.state.goLiveDate && (!isWLOnly || whitelistTokenBalance > 0) ? (

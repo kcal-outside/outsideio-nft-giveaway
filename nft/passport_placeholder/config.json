@@ -1,0 +1,27 @@
+{
+    "price": 0.01,
+	  "symbol": "OUTPASS",
+    "gatekeeper": null,
+    "number": 1,
+    "solTreasuryAccount": "64FjYL9wTS9qtnvA19N2pWn9Awkj9ww56qE5Zkg2EgXu",
+    "splTokenAccount": null,
+    "splToken": null,
+    "goLiveDate": "2022-04-01T00:00:00Z",
+    "endSettings": null,
+    "whitelistMintSettings": null,
+    "hiddenSettings" : null, 
+    "storage": "arweave-sol",
+    "ipfsInfuraProjectId": null,
+    "ipfsInfuraSecret": null,
+    "awsS3Bucket": null,
+    "uploadMethod": "bundlr",
+    "retainAuthority": true,
+    "isMutable": true,
+    "sellerFeeBasisPoints": 1000,
+    "creators": [
+    {
+      "address": "64FjYL9wTS9qtnvA19N2pWn9Awkj9ww56qE5Zkg2EgXu",
+      "share": 100
+    }
+  ]
+}

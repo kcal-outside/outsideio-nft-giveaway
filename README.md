@@ -106,6 +106,7 @@ Use this to update the config.json's `hiddenSettings:uri` for the nft.
 When launching the candymachine, make sure to use production (mainnet-test) or devnet.
 
 To initialize a whole new Candy Machine, you need to delete `.cache` folder.
+Make sure you do a `withdraw` before you delete the `.cache` folder.
 
 General steps to do an unlimited drop:
 1. Set config.json to number=0 using a hiddenSetting
@@ -210,3 +211,7 @@ ts-node ~/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts show \
     -k ~/.config/solana/mainnet-wallet.json \
     -c outside_bedrock 
 ```
+
+
+# Original Code Base for POC
+https://github.com/Fulgurus/candy-machine-v2-responsive-ui
