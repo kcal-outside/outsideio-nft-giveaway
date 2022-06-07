@@ -490,7 +490,7 @@ const Home = (props: HomeProps) => {
                     <Wallet>
                         {wallet ?
                             <WalletAmount>{(balance || 0).toLocaleString()} SOL<ConnectButton/></WalletAmount> :
-                            <ConnectButton>Connect Wallet</ConnectButton>}
+                            <ConnectButton>Connect (DEVNET) Wallet</ConnectButton>}
                     </Wallet>
                 </WalletContainer>
                 <ShimmerTitle>Buy your Passport</ShimmerTitle>

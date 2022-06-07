@@ -24,6 +24,8 @@ solana config set \
 1. Ensure that `config.json` is using the correct wallets.
 1. Ensure that the `hiddenSettings.uri` is using the arweave link from the passport_placeholder.  The initial hash can be `replacemereplacemereplacemerepla` (32 characters) as we are going to replace as outlined below.
 
+### PRESALE
+
 ### INITIAL STEPS
 
 These steps are written as vanilla below, but they could include specific options such as `-k {link/to/solana-wallet.json}` or `-r {https://rpc.link/for/main-net}` etc.  
@@ -52,9 +54,9 @@ The only 30 character hash is MD5() so that was used instead for this.
 
 1. (TODO: USED MD5) SHA256() the above using a website like https://emn178.github.io/online-tools/sha256.html. Using the above, we get `de341d8210f955ffe6282b625428b4c0192825a852f0ec14d8b3a13fded5caf7`.
 
-1. MD5() the above using a website like https://www.md5hashgenerator.com/. Using the above, we get `d09851a3d6ef19371ee53325a3c466fe`.
+1. MD5() the above using a website like https://www.md5hashgenerator.com/. Using the above, we get `8e48c7bb3ee150784109d9c3b9adfc37`.
 
-1. Edit `config.json` and replace the `hiddenSettings.hash` to use `d09851a3d6ef19371ee53325a3c466fe`
+1. Edit `config.json` and replace the `hiddenSettings.hash` to use `8e48c7bb3ee150784109d9c3b9adfc37`
 
 1. Update the config file using sugar.
     ```bash
@@ -63,14 +65,14 @@ The only 30 character hash is MD5() so that was used instead for this.
 
 ### MINTING WEBSITE
 
-At this point we have a candy machine id `7Nw7vGgBgANP8bSFKsnvzHWgtqegf3tiVWPpNktDFXt1` 
+At this point we have a candy machine id `9AgCgbSDp8heYqfxdP9XZDo6tvSKSprvHDRxxR8G6VMa` 
 Update the `.env` file and run the website.
 
 ### SIGNING THE MINT
 
 After the public sale is complete, we should sign the NFTs to ensure that owners know they are valid.
 ```bash
-$ metaboss sign all -k ~/.config/solana/devnet-wallet.json -c 6DsrGJQSVDWydFrZaZibHNFCHUAcLgavE2w94U999gDN --v2
+$ metaboss sign all -k ~/.config/solana/devnet-wallet.json -c 7Nw7vGgBgANP8bSFKsnvzHWgtqegf3tiVWPpNktDFXt1 --v2
 ```
 
 ### GETTING OWNERS
@@ -78,12 +80,12 @@ $ metaboss sign all -k ~/.config/solana/devnet-wallet.json -c 6DsrGJQSVDWydFrZaZ
 We can now use metaboss to get the list of NFT owners so we can update the meta data.
 
 ```bash
-$ metaboss snapshot holders --creator 6DsrGJQSVDWydFrZaZibHNFCHUAcLgavE2w94U999gDN --v2
+$ metaboss snapshot holders --creator 7Nw7vGgBgANP8bSFKsnvzHWgtqegf3tiVWPpNktDFXt1 --v2
 ```
 
 ### REVEAL THE MINT, aKA UPDATING URI
 
-TODO: We need to write a python script to take the `6DsrGJQSVDWydFrZaZibHNFCHUAcLgavE2w94U999gDN_holders.json`
+TODO: We need to write a python script to take the `9AgCgbSDp8heYqfxdP9XZDo6tvSKSprvHDRxxR8G6VMa.json`
 and output update_uri.json that can be used by metaboss below.
 
 ```bash

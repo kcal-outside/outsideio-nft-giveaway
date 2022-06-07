@@ -1,10 +1,50 @@
 [
     {
-        "mint_account": "AErTFZfYPUs9HomqQhsHCjN7K6jsa9H7tBtCrjsFaBkD",
-        "new_uri": "https://arweave.net/uhGpAW3fAXAYc7686uxmitzQQ5Avs4RWKbZgz-u82lM"
+        "mint_account": "D9JamuzZBYpHPP1E9k8SDdq9j8SwsAAy4AjMUMa9TYKC",
+        "new_uri": "https://arweave.net/1eIRAGulwYcz0SE96mhNm0ivwFkc1W4WUqtw37lX9wQ"
     },
-        {
-        "mint_account": "CnFZ7Xk8truaxNXse5RbuNAw5kSK6P6qp6PrVs878S1g",
-        "new_uri": "https://arweave.net/4kBdAf7Y3ZC_bQcWgcSfXRgBtoOEVgSpUlsu1nPW53g"
+    {
+        "mint_account": "4DpHcaFyWoA8N3xMDGp4bpjYXtrDG9w35w66pdMQMd7T",
+        "new_uri": "https://arweave.net/rLHonv4NVL7gD0VvQttyxdSo1Bmgn_jxfQPOn6cBz2s"
+    },
+    {
+        "mint_account": "8WkKFiW6g84TU4zJD8pKcYRZLzxCdLVKnpVtq9PEc8h6",
+        "new_uri": "https://arweave.net/S1iqk-NEr4Ej9VHb6PvplvW1dURQxA9jk9CbyYWY45A"
+    },
+    {
+        "mint_account": "4LkeHt7Wi7X7miooiNMDuo2z4TEve49aMuY1Cq2pt78U",
+        "new_uri": "https://arweave.net/bJVVX5-DlKEXkMrDLAM3YfL58t6fIK0Myyr0LGakpE4"
+    },
+    {
+        "mint_account": "GWmTmXqXyRYBZKT57XUb4UsXo5nwJcSqoyZm9Pja2cp5",
+        "new_uri": "https://arweave.net/sz5y2oIuonBrU13jr_wqZEPi1Pf-sSESRsG2oSRomrI"
+    },
+    {
+        "mint_account": "Dw7DW25KCbVg7C3H3tgcduHBvCPt5RLYUEzKtmmp4P2x",
+        "new_uri": "https://arweave.net/0KZ_1zpFV6FFZeGtUxhMz9HfiSeTd7fHXRitxe1E9kE"
+    },
+    {
+        "mint_account": "6GYWvXXMA88ZGKuoRPVTYesZTCZ2uji96yXgDdX9Wwhy",
+        "new_uri": "https://arweave.net/fWW4rgv3cOOH0U9YBQepqf3ASHy7HrjhpOS0H2FB85Q"
+    },
+    {
+        "mint_account": "7yGjkHcrPxVRrJVUVxcioFQYLjFW8sGcoQfMATj2g8pL",
+        "new_uri": "https://arweave.net/7BRcPt-6aS0sai8AgV5fqlBmY6Dh6-V6YcW7c31kZ78"
+    },
+    {
+        "mint_account": "HgM6CULdreNJtP6WoHt1vaGvEfUKNi2iS9FV31s3MxT8",
+        "new_uri": "https://arweave.net/LuzDQrLJUneqTo7CO46aCNUMmApZwlomGMD09uMQeVw"
+    },
+    {
+        "mint_account": "8CcWodnnfHpLvUrf9gFjMptyqTWrRWmDxFjFY4yzVkDU",
+        "new_uri": "https://arweave.net/q5MDoDiq4lKVi-YS_M8F8SHb2BHSHNtY0Gr5QVPgOf8"
+    },
+    {
+        "mint_account": "956p8xymJ3AHreCSSWMDByR5N7NUAeB2CguTQSxpwDG4",
+        "new_uri": "https://arweave.net/aKArBBY-K5K3RmVrKnNyXTXzNSKytjUE8y3V675T5XE"
+    },
+    {
+        "mint_account": "7zkKXPNSfSKJwkZGFr6PNU5zvfp3WcbgcwCoBpWaPmNX",
+        "new_uri": "https://arweave.net/ENj-lbS7nzsjzL51NitkB9yf1Nx5haCxNhESf6CeG3w"
     }
 ]
