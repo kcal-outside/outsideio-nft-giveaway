@@ -26,6 +26,33 @@ solana config set \
 
 ### PRESALE
 
+In some demos different token accounts are created for presale.
+
+```bash
+$ solana-keygen grind --starts-with vip:1
+...
+Wrote keypair to vip3iR3U1sGAFSnrYnNdZ4uBCjA3TWW4QBSRRMAHT7j.json
+```
+
+We can create SPL tokens using the CLI
+
+```bash
+$ spl-token create-token vip3iR3U1sGAFSnrYnNdZ4uBCjA3TWW4QBSRRMAHT7j.json --decimals 0
+$ spl-token create-account vip3iR3U1sGAFSnrYnNdZ4uBCjA3TWW4QBSRRMAHT7j.json
+$ spl-token mint vip3iR3U1sGAFSnrYnNdZ4uBCjA3TWW4QBSRRMAHT7j.json 100
+```
+
+We can validate this:
+```bash
+$ spl-token accounts
+
+Token                                         Balance
+---------------------------------------------------------------
+vip3iR3U1sGAFSnrYnNdZ4uBCjA3TWW4QBSRRMAHT7j   100
+```
+
+Now its about distributing.
+
 ### INITIAL STEPS
 
 These steps are written as vanilla below, but they could include specific options such as `-k {link/to/solana-wallet.json}` or `-r {https://rpc.link/for/main-net}` etc.  
@@ -65,14 +92,14 @@ The only 30 character hash is MD5() so that was used instead for this.
 
 ### MINTING WEBSITE
 
-At this point we have a candy machine id `9AgCgbSDp8heYqfxdP9XZDo6tvSKSprvHDRxxR8G6VMa` 
+At this point we have a candy machine id `EDbH5r4w9e3TEdwfjpR5cLVnY4DyG742CKYgN94Ydns2` 
 Update the `.env` file and run the website.
 
 ### SIGNING THE MINT
 
 After the public sale is complete, we should sign the NFTs to ensure that owners know they are valid.
 ```bash
-$ metaboss sign all -k ~/.config/solana/devnet-wallet.json -c 7Nw7vGgBgANP8bSFKsnvzHWgtqegf3tiVWPpNktDFXt1 --v2
+$ metaboss sign all -k ~/.config/solana/devnet-wallet.json -c EDbH5r4w9e3TEdwfjpR5cLVnY4DyG742CKYgN94Ydns2 --v2
 ```
 
 ### GETTING OWNERS
@@ -80,12 +107,12 @@ $ metaboss sign all -k ~/.config/solana/devnet-wallet.json -c 7Nw7vGgBgANP8bSFKs
 We can now use metaboss to get the list of NFT owners so we can update the meta data.
 
 ```bash
-$ metaboss snapshot holders --creator 7Nw7vGgBgANP8bSFKsnvzHWgtqegf3tiVWPpNktDFXt1 --v2
+$ metaboss snapshot holders --creator EDbH5r4w9e3TEdwfjpR5cLVnY4DyG742CKYgN94Ydns2 --v2
 ```
 
 ### REVEAL THE MINT, aKA UPDATING URI
 
-TODO: We need to write a python script to take the `9AgCgbSDp8heYqfxdP9XZDo6tvSKSprvHDRxxR8G6VMa.json`
+TODO: We need to write a python script to take the `EDbH5r4w9e3TEdwfjpR5cLVnY4DyG742CKYgN94Ydns2.json`
 and output update_uri.json that can be used by metaboss below.
 
 ```bash
