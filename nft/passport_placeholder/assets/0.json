@@ -2,14 +2,14 @@
 	"name": "Testverse Passport",
 	"symbol": "OUTPASS",
 	"description": "Unlock first access and even more perks and benefits with our utility-enhanced generative art NFT, the Outerverse Passport. Earn ongoing benefits that increase the longer you hold the pass, the events you attend, the NFTs you own from the marketplace, and of course the more you get outside. Think of this as your VIP global entry, skip the line pass to all things Outerverse.",
-	"image": "0.png",
+	"image": "0.gif",
 	"attributes": [],
 	"seller_fee_basis_points": 1000,
 	"properties": {
 		"category": "image",
 		"files": [{
-			"uri": "0.png",
-			"type": "image/png"
+			"uri": "0.gif",
+			"type": "image/gif"
 		}]
 	},
 	"collection": {

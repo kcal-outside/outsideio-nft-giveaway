@@ -33,7 +33,7 @@ $ sugar verify
 ```
 
 ### PROPERTIES
-At this point we have a candy machine id `85JikCaWsqp2x9Eo85V7zU5pNfKiP8ishHasu2ARnCUG` 
+At this point we have a candy machine id `825tEGz73dvoMeoiA5sYcPg8huyNuTkGvMSuT5k9nD7E` 
 but more importantly, we have the placeholder assets loaded into arweave.
 
 Look at the generated `cache.json` file for the `metadata_link` property that looks like: https://h2lqx5nssy3mjlyhofssf7adp2mgcepqqhxfji2nzq2elxf4ex2q.arweave.net/PpcL9bKWNsSvB3FlIvwDfphhEfCB7lSjTcw0Rdy8JfU
