@@ -6,13 +6,18 @@
     "solTreasuryAccount": "64FjYL9wTS9qtnvA19N2pWn9Awkj9ww56qE5Zkg2EgXu",
     "splTokenAccount": null,
     "splToken": null,
-    "goLiveDate": "2022-04-01T00:00:00Z",
+    "goLiveDate": "2022-06-18T00:00:00Z",
     "endSettings": null,
-    "whitelistMintSettings": null,
+    "whitelistMintSettings": {
+        "mode": "burnEveryTime",
+        "mint" : "vip3cYmE2vuBoNA92h1URVNgXWu23k31b1fbL3b9rVy",
+        "presale" : true,
+        "discountPrice" : null
+    },
     "hiddenSettings": {
         "name":"Testverse Passport ",
-        "uri":"https://h2lqx5nssy3mjlyhofssf7adp2mgcepqqhxfji2nzq2elxf4ex2q.arweave.net/PpcL9bKWNsSvB3FlIvwDfphhEfCB7lSjTcw0Rdy8JfU",
-        "hash":"8e48c7bb3ee150784109d9c3b9adfc37"
+        "uri":"https://ncxb546vu25o2qqccabfpvyu6jdwvuoz4i74jzg7lkx3v5wygq.arweave.net/aK4e89Wm_uu1CAhACV9cU8kdq0dniP8Tk31qvuvbYNA",
+        "hash":"395cd66956134c692def8f92ac784d58"
     },
     "storage": "arweave-sol",
     "ipfsInfuraProjectId": null,
