@@ -17,6 +17,12 @@ solana config set \
   --keypair ~/.config/solana/devnet-wallet.json
 ```
 
+```
+solana config set \
+   --url https://long-old-rain.solana-mainnet.quiknode.pro/c98f1c4c592f8fa10569d624c807bf2dbc0ec790/ \
+   --keypair ~/.config/solana/mainnet-wallet.json
+```
+
 ## Instructions
 
 ### IMPORTANT
@@ -41,7 +47,7 @@ We can create SPL tokens using the CLI
 ```bash
 $ spl-token create-token vip3cYmE2vuBoNA92h1URVNgXWu23k31b1fbL3b9rVy.json --decimals 0
 $ spl-token create-account vip3cYmE2vuBoNA92h1URVNgXWu23k31b1fbL3b9rVy.json
-$ spl-token mint vip3cYmE2vuBoNA92h1URVNgXWu23k31b1fbL3b9rVy.json 10000
+$ spl-token mint vip3cYmE2vuBoNA92h1URVNgXWu23k31b1fbL3b9rVy.json 1000
 ```
 
 We can validate this:
@@ -56,6 +62,18 @@ vip3iR3U1sGAFSnrYnNdZ4uBCjA3TWW4QBSRRMAHT7j   1000
 
 If we care about asthetics and want an image and name for the token, then follow
 these instructions: https://github.com/solana-labs/token-list#adding-new-token
+
+##### PRODUCTION NOTES
+
+I have already run the following on PRODUCTION / mainnet to test. 
+`C5KWVxkM8C9tp7zMYSEhsUgrCfvjoZqAzeLFAcz32EC2` is Kevin Callahan's PUBLIC solana wallet.
+
+```bash
+$ spl-token create-token vip3cYmE2vuBoNA92h1URVNgXWu23k31b1fbL3b9rVy.json --decimals 0
+$ spl-token create-account vip3cYmE2vuBoNA92h1URVNgXWu23k31b1fbL3b9rVy.json
+$ spl-token mint vip3cYmE2vuBoNA92h1URVNgXWu23k31b1fbL3b9rVy.json 1000
+$ spl-token transfer --allow-unfunded-recipient --fund-recipient vip3cYmE2vuBoNA92h1URVNgXWu23k31b1fbL3b9rVy 5  C5KWVxkM8C9tp7zMYSEhsUgrCfvjoZqAzeLFAcz32EC2
+```
 
 #### Distributing SPL Tokens via Command Line
 
@@ -95,7 +113,7 @@ $ sugar deploy
 $ sugar verify
 ```
 
-Get the candy machine id: BPSoM1YCqnX4f87uhXHkb7yV2A6Paqp9Kts9oMvBsE1C
+Get the candy machine id: 3wGRXwu9C3EG6wyjMupTqXcM4K1wtWMQiqm4mzgT1kpo
 
 ### HIDDEN SETTINGS HASH
 
@@ -122,7 +140,7 @@ The only 30 character hash is MD5() so that was used instead for this.
 
 ### MINTING WEBSITE
 
-At this point we have a candy machine id `BPSoM1YCqnX4f87uhXHkb7yV2A6Paqp9Kts9oMvBsE1C` 
+At this point we have a candy machine id `3wGRXwu9C3EG6wyjMupTqXcM4K1wtWMQiqm4mzgT1kpo` 
 Update the `.env` file and run the website.
 
 ### SIGNING THE MINT
@@ -137,12 +155,12 @@ $ metaboss sign all -k ~/.config/solana/devnet-wallet.json -c EDbH5r4w9e3TEdwfjp
 We can now use metaboss to get the list of NFT owners so we can update the meta data.
 
 ```bash
-$ metaboss snapshot holders --creator BPSoM1YCqnX4f87uhXHkb7yV2A6Paqp9Kts9oMvBsE1C --v2
+$ metaboss snapshot holders --creator 3wGRXwu9C3EG6wyjMupTqXcM4K1wtWMQiqm4mzgT1kpo --v2
 ```
 
 ### REVEAL THE MINT, aKA UPDATING URI
 
-TODO: We need to write a python script to take the `BPSoM1YCqnX4f87uhXHkb7yV2A6Paqp9Kts9oMvBsE1C.json`
+TODO: We need to write a python script to take the `3wGRXwu9C3EG6wyjMupTqXcM4K1wtWMQiqm4mzgT1kpo.json`
 and output update_uri.json that can be used by metaboss below.
 
 ```bash
