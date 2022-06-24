@@ -1,0 +1,32 @@
+{
+    "name": "Fire Storm #04",
+    "external_url": "https://mergeahead.io/",
+    "symbol": "FIRESTORM",
+    "description": "Nature is metal. Fire consumes itself but is present in every environment on Earth.",
+    "seller_fee_basis_points": 500,
+    "image": "3.png",
+    "edition": 0,
+    "attributes": [
+        {
+            "trait_type": "Landscape",
+            "value": "City Fire"
+        },
+        {
+            "trait_type": "Evolution Step",
+            "value": "1"
+        }
+    ],
+    "properties": {
+        "category": "image",
+        "files": [
+            {
+                "uri": "3.png",
+                "type": "image/png"
+            }
+        ]
+    },
+    "collection": {
+        "name": "Fire Storm",
+        "family": "MergeAhead"
+    }
+}
