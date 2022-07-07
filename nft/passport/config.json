@@ -3,7 +3,7 @@
 	  "symbol": "OUTPASS",
     "gatekeeper": null,
     "number": 100,
-    "solTreasuryAccount": "64FjYL9wTS9qtnvA19N2pWn9Awkj9ww56qE5Zkg2EgXu",
+    "solTreasuryAccount": "94h88BQvGrvtksE1Xs6krz8FNRFnC7wVHh6E9zZ4QmWa",
     "splTokenAccount": null,
     "splToken": null,
     "goLiveDate": "2022-06-28T00:00:01Z",
@@ -15,7 +15,7 @@
         "discountPrice" : null
     },
     "hiddenSettings": {
-        "name":"Testverse Passport ",
+        "name":"Outerverse Passport ",
         "uri":"https://ncxb546vu25o2qqccabfpvyu6jdwvuoz4i74jzg7lkx3v5wygq.arweave.net/aK4e89Wm_uu1CAhACV9cU8kdq0dniP8Tk31qvuvbYNA",
         "hash":"395cd66956134c692def8f92ac784d58"
     },
@@ -29,8 +29,12 @@
     "sellerFeeBasisPoints": 1000,
     "creators": [
     {
-      "address": "64FjYL9wTS9qtnvA19N2pWn9Awkj9ww56qE5Zkg2EgXu",
-      "share": 100
+      "address": "94h88BQvGrvtksE1Xs6krz8FNRFnC7wVHh6E9zZ4QmWa",
+      "share": 50
+    },
+    {
+      "address": "7B6FJuJ6ku9HGY79kAcYMRKW9kd7dQokkoetvaWzUtzG",
+      "share": 50
     }
   ]
 }

@@ -29,10 +29,11 @@ solana config set \
 1. Ensure that the right solana config is loaded.
 1. Ensure that `config.json` is using the correct wallets.
 1. Ensure that the `hiddenSettings.uri` is using the arweave link from the passport_placeholder.  The initial hash can be `replacemereplacemereplacemerepla` (32 characters) as we are going to replace as outlined below.
+1. Ensure that a collection NFT is minted and ready.
 
 ### PRESALE
 
-#### Create SPL Tokens
+#### Create SPL Tokens (DONE)
 
 In some demos different token accounts are created for presale.
 
@@ -106,14 +107,21 @@ These steps are written as vanilla below, but they could include specific option
 Run `sugar help` for all options.
 
 ```bash
-$ cd nft/passport
 $ sugar validate
 $ sugar upload
 $ sugar deploy
 $ sugar verify
 ```
 
-Get the candy machine id: 3wGRXwu9C3EG6wyjMupTqXcM4K1wtWMQiqm4mzgT1kpo
+Get the candy machine id: `3wGRXwu9C3EG6wyjMupTqXcM4K1wtWMQiqm4mzgT1kpo`
+
+### COLLECTION
+
+Now we need to set the collection per Metaplex. Use the token id from `passport_collection`
+ie., `123456789abcdefghijklmnopqrstuvwxyz`
+
+```bash
+$ sugar collection set --collection-mint 123456789abcdefghijklmnopqrstuvwxyz
 
 ### HIDDEN SETTINGS HASH
 
@@ -137,6 +145,17 @@ The only 30 character hash is MD5() so that was used instead for this.
     ```bash
     $ sugar update
     ```
+
+### INTERNAL MINTING
+
+If we are going to mint NFTs to give away, we can do the following:
+1. Change config.json to price = 0
+1. `$ sugar update`
+1. Mint the number we want
+1. Change config.json to price = 7?
+1. `$ sugar update`
+1. Ready for public minting
+
 
 ### MINTING WEBSITE
 
