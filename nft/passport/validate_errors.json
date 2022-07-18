@@ -1,0 +1,402 @@
+[
+  {
+    "path": "assets/2.json",
+    "error": "missing field `creators` at line 1 column 1214"
+  },
+  {
+    "path": "assets/0.json",
+    "error": "missing field `creators` at line 1 column 1215"
+  },
+  {
+    "path": "assets/17.json",
+    "error": "missing field `creators` at line 1 column 1212"
+  },
+  {
+    "path": "assets/26.json",
+    "error": "missing field `creators` at line 1 column 1234"
+  },
+  {
+    "path": "assets/25.json",
+    "error": "missing field `creators` at line 1 column 1216"
+  },
+  {
+    "path": "assets/15.json",
+    "error": "missing field `creators` at line 1 column 1219"
+  },
+  {
+    "path": "assets/30.json",
+    "error": "missing field `creators` at line 1 column 1213"
+  },
+  {
+    "path": "assets/22.json",
+    "error": "missing field `creators` at line 1 column 1223"
+  },
+  {
+    "path": "assets/28.json",
+    "error": "missing field `creators` at line 1 column 1220"
+  },
+  {
+    "path": "assets/3.json",
+    "error": "missing field `creators` at line 1 column 1211"
+  },
+  {
+    "path": "assets/23.json",
+    "error": "missing field `creators` at line 1 column 1211"
+  },
+  {
+    "path": "assets/14.json",
+    "error": "missing field `creators` at line 1 column 1222"
+  },
+  {
+    "path": "assets/31.json",
+    "error": "missing field `creators` at line 1 column 1212"
+  },
+  {
+    "path": "assets/18.json",
+    "error": "missing field `creators` at line 1 column 1224"
+  },
+  {
+    "path": "assets/29.json",
+    "error": "missing field `creators` at line 1 column 1229"
+  },
+  {
+    "path": "assets/54.json",
+    "error": "missing field `creators` at line 1 column 1220"
+  },
+  {
+    "path": "assets/21.json",
+    "error": "missing field `creators` at line 1 column 1218"
+  },
+  {
+    "path": "assets/19.json",
+    "error": "missing field `creators` at line 1 column 1219"
+  },
+  {
+    "path": "assets/24.json",
+    "error": "missing field `creators` at line 1 column 1216"
+  },
+  {
+    "path": "assets/77.json",
+    "error": "missing field `creators` at line 1 column 1230"
+  },
+  {
+    "path": "assets/1.json",
+    "error": "missing field `creators` at line 1 column 1217"
+  },
+  {
+    "path": "assets/20.json",
+    "error": "missing field `creators` at line 1 column 1229"
+  },
+  {
+    "path": "assets/65.json",
+    "error": "missing field `creators` at line 1 column 1215"
+  },
+  {
+    "path": "assets/16.json",
+    "error": "missing field `creators` at line 1 column 1220"
+  },
+  {
+    "path": "assets/6.json",
+    "error": "missing field `creators` at line 1 column 1214"
+  },
+  {
+    "path": "assets/88.json",
+    "error": "missing field `creators` at line 1 column 1218"
+  },
+  {
+    "path": "assets/62.json",
+    "error": "missing field `creators` at line 1 column 1215"
+  },
+  {
+    "path": "assets/55.json",
+    "error": "missing field `creators` at line 1 column 1235"
+  },
+  {
+    "path": "assets/57.json",
+    "error": "missing field `creators` at line 1 column 1224"
+  },
+  {
+    "path": "assets/27.json",
+    "error": "missing field `creators` at line 1 column 1225"
+  },
+  {
+    "path": "assets/32.json",
+    "error": "missing field `creators` at line 1 column 1212"
+  },
+  {
+    "path": "assets/82.json",
+    "error": "missing field `creators` at line 1 column 1224"
+  },
+  {
+    "path": "assets/93.json",
+    "error": "missing field `creators` at line 1 column 1224"
+  },
+  {
+    "path": "assets/63.json",
+    "error": "missing field `creators` at line 1 column 1217"
+  },
+  {
+    "path": "assets/10.json",
+    "error": "missing field `creators` at line 1 column 1213"
+  },
+  {
+    "path": "assets/78.json",
+    "error": "missing field `creators` at line 1 column 1227"
+  },
+  {
+    "path": "assets/70.json",
+    "error": "missing field `creators` at line 1 column 1240"
+  },
+  {
+    "path": "assets/12.json",
+    "error": "missing field `creators` at line 1 column 1225"
+  },
+  {
+    "path": "assets/66.json",
+    "error": "missing field `creators` at line 1 column 1214"
+  },
+  {
+    "path": "assets/60.json",
+    "error": "missing field `creators` at line 1 column 1210"
+  },
+  {
+    "path": "assets/73.json",
+    "error": "missing field `creators` at line 1 column 1218"
+  },
+  {
+    "path": "assets/11.json",
+    "error": "missing field `creators` at line 1 column 1219"
+  },
+  {
+    "path": "assets/89.json",
+    "error": "missing field `creators` at line 1 column 1227"
+  },
+  {
+    "path": "assets/33.json",
+    "error": "missing field `creators` at line 1 column 1225"
+  },
+  {
+    "path": "assets/8.json",
+    "error": "missing field `creators` at line 1 column 1216"
+  },
+  {
+    "path": "assets/58.json",
+    "error": "missing field `creators` at line 1 column 1218"
+  },
+  {
+    "path": "assets/56.json",
+    "error": "missing field `creators` at line 1 column 1213"
+  },
+  {
+    "path": "assets/83.json",
+    "error": "missing field `creators` at line 1 column 1229"
+  },
+  {
+    "path": "assets/94.json",
+    "error": "missing field `creators` at line 1 column 1220"
+  },
+  {
+    "path": "assets/64.json",
+    "error": "missing field `creators` at line 1 column 1221"
+  },
+  {
+    "path": "assets/79.json",
+    "error": "missing field `creators` at line 1 column 1224"
+  },
+  {
+    "path": "assets/13.json",
+    "error": "missing field `creators` at line 1 column 1217"
+  },
+  {
+    "path": "assets/71.json",
+    "error": "missing field `creators` at line 1 column 1219"
+  },
+  {
+    "path": "assets/74.json",
+    "error": "missing field `creators` at line 1 column 1223"
+  },
+  {
+    "path": "assets/67.json",
+    "error": "missing field `creators` at line 1 column 1231"
+  },
+  {
+    "path": "assets/42.json",
+    "error": "missing field `creators` at line 1 column 1228"
+  },
+  {
+    "path": "assets/59.json",
+    "error": "missing field `creators` at line 1 column 1222"
+  },
+  {
+    "path": "assets/61.json",
+    "error": "missing field `creators` at line 1 column 1237"
+  },
+  {
+    "path": "assets/9.json",
+    "error": "missing field `creators` at line 1 column 1216"
+  },
+  {
+    "path": "assets/80.json",
+    "error": "missing field `creators` at line 1 column 1215"
+  },
+  {
+    "path": "assets/48.json",
+    "error": "missing field `creators` at line 1 column 1215"
+  },
+  {
+    "path": "assets/84.json",
+    "error": "missing field `creators` at line 1 column 1221"
+  },
+  {
+    "path": "assets/96.json",
+    "error": "missing field `creators` at line 1 column 1213"
+  },
+  {
+    "path": "assets/34.json",
+    "error": "missing field `creators` at line 1 column 1232"
+  },
+  {
+    "path": "assets/95.json",
+    "error": "missing field `creators` at line 1 column 1225"
+  },
+  {
+    "path": "assets/85.json",
+    "error": "missing field `creators` at line 1 column 1215"
+  },
+  {
+    "path": "assets/72.json",
+    "error": "missing field `creators` at line 1 column 1220"
+  },
+  {
+    "path": "assets/43.json",
+    "error": "missing field `creators` at line 1 column 1222"
+  },
+  {
+    "path": "assets/68.json",
+    "error": "missing field `creators` at line 1 column 1223"
+  },
+  {
+    "path": "assets/91.json",
+    "error": "missing field `creators` at line 1 column 1228"
+  },
+  {
+    "path": "assets/75.json",
+    "error": "missing field `creators` at line 1 column 1221"
+  },
+  {
+    "path": "assets/90.json",
+    "error": "missing field `creators` at line 1 column 1217"
+  },
+  {
+    "path": "assets/50.json",
+    "error": "missing field `creators` at line 1 column 1219"
+  },
+  {
+    "path": "assets/81.json",
+    "error": "missing field `creators` at line 1 column 1223"
+  },
+  {
+    "path": "assets/52.json",
+    "error": "missing field `creators` at line 1 column 1220"
+  },
+  {
+    "path": "assets/49.json",
+    "error": "missing field `creators` at line 1 column 1220"
+  },
+  {
+    "path": "assets/37.json",
+    "error": "missing field `creators` at line 1 column 1227"
+  },
+  {
+    "path": "assets/69.json",
+    "error": "missing field `creators` at line 1 column 1224"
+  },
+  {
+    "path": "assets/35.json",
+    "error": "missing field `creators` at line 1 column 1219"
+  },
+  {
+    "path": "assets/97.json",
+    "error": "missing field `creators` at line 1 column 1243"
+  },
+  {
+    "path": "assets/51.json",
+    "error": "missing field `creators` at line 1 column 1228"
+  },
+  {
+    "path": "assets/86.json",
+    "error": "missing field `creators` at line 1 column 1228"
+  },
+  {
+    "path": "assets/7.json",
+    "error": "missing field `creators` at line 1 column 1212"
+  },
+  {
+    "path": "assets/45.json",
+    "error": "missing field `creators` at line 1 column 1216"
+  },
+  {
+    "path": "assets/98.json",
+    "error": "missing field `creators` at line 1 column 1210"
+  },
+  {
+    "path": "assets/44.json",
+    "error": "missing field `creators` at line 1 column 1226"
+  },
+  {
+    "path": "assets/4.json",
+    "error": "missing field `creators` at line 1 column 1216"
+  },
+  {
+    "path": "assets/92.json",
+    "error": "missing field `creators` at line 1 column 1222"
+  },
+  {
+    "path": "assets/5.json",
+    "error": "missing field `creators` at line 1 column 1213"
+  },
+  {
+    "path": "assets/53.json",
+    "error": "missing field `creators` at line 1 column 1229"
+  },
+  {
+    "path": "assets/38.json",
+    "error": "missing field `creators` at line 1 column 1216"
+  },
+  {
+    "path": "assets/76.json",
+    "error": "missing field `creators` at line 1 column 1225"
+  },
+  {
+    "path": "assets/39.json",
+    "error": "missing field `creators` at line 1 column 1211"
+  },
+  {
+    "path": "assets/36.json",
+    "error": "missing field `creators` at line 1 column 1218"
+  },
+  {
+    "path": "assets/99.json",
+    "error": "missing field `creators` at line 1 column 1226"
+  },
+  {
+    "path": "assets/46.json",
+    "error": "missing field `creators` at line 1 column 1218"
+  },
+  {
+    "path": "assets/87.json",
+    "error": "missing field `creators` at line 1 column 1230"
+  },
+  {
+    "path": "assets/47.json",
+    "error": "missing field `creators` at line 1 column 1221"
+  },
+  {
+    "path": "assets/40.json",
+    "error": "missing field `creators` at line 1 column 1212"
+  },
+  {
+    "path": "assets/41.json",
+    "error": "missing field `creators` at line 1 column 1232"
+  }
+]

@@ -166,7 +166,7 @@ Update the `.env` file and run the website.
 
 After the public sale is complete, we should sign the NFTs to ensure that owners know they are valid.
 ```bash
-$ metaboss sign all -k ~/.config/solana/devnet-wallet.json -c EDbH5r4w9e3TEdwfjpR5cLVnY4DyG742CKYgN94Ydns2 --v2
+$ metaboss sign all -k ~/.config/solana/devnet-wallet.json -c 3wGRXwu9C3EG6wyjMupTqXcM4K1wtWMQiqm4mzgT1kpo --v2
 ```
 
 ### GETTING OWNERS
